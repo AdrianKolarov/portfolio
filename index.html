@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Loading Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module">
+    import { initApp } from "./App.js";
+    initApp();
+  </script>
+</head>
+<body>
+  
+  
+  <div class="toggle-container">
+    <p>Contact me: adrian.kolarov@abv.bg</p>
+    <button class="toggle-btn" id="btn-en" onclick="switchLanguage('en')">
+      <span class="flag en active" id="en"></span>
+    </button>
+    <button class="toggle-btn" id="btn-de" onclick="switchLanguage('de')">
+      <span class="flag de"></span>
+    </button>
+  </div>
+  
+  
+  <div id="english-version">
+    <div class="container visible">
+      <div class="personal">
+        <div class="picture">
+          <img src="./imgs/IMG_1431.jpg" alt="" width="400" height="520">
+          <div class="skills">
+            <img src="./imgs/react.png" alt="" width="30" height="30">
+            <img src="./imgs/js.webp" alt="" width="30" height="30">
+            <img src="./imgs/Typescript_logo_2020.svg.png" alt="" width="30" height="30">
+            <img src="./imgs/css3-logo-vector-download-11573943110ujyqmvcq4d.png" alt="" width="30" height="30">
+            <img src="./imgs/png-clipart-angularjs-single-page-application-web-application-angular-miscellaneous-angle-thumbnail.png" alt="" width="30" height="30" class="blinking-image">
+          </div>
+        </div>
+        <div class="info">
+          <h1>General Information:</h1>
+          <h2>Adrian Kolarov</h2>
+          <p>I'm a newly certified React Front-End developer with a passion for creating user-friendly applications. I specialize in React, Vite, JavaScript, and TypeScript, and am currently working on an Angular certification as well. Further down, you can see my certifications and projects I've worked on.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container hidden">
+      <div class="cert-container">
+        <h2>Certificates</h2>
+        <div class="container1">
+          <div>
+            <h3>JS Advanced</h3>
+            <img class="cert" src="./imgs/js_advanced.jpeg" alt="JavaScript Advanced">
+          </div>
+          <div>
+            <h3>JS Applications</h3>
+            <img class="cert" src="./imgs/js_applicatoins.jpeg" alt="JavaScript Applications">
+          </div>
+          <div>
+            <h3>JS Backend</h3>
+            <img class="cert" src="./imgs/js_backend.jpeg" alt="JavaScript Backend">
+          </div>
+          <div>
+            <h3>HTML & CSS</h3>
+            <img class="cert" src="./imgs/html+css.jpeg" alt="HTML + CSS">
+          </div>
+          <div>
+            <h3>ReactJS</h3>
+            <img class="cert" src="./imgs/reactjs.jpeg" alt="React JS">
+          </div>
+          <div>
+            <h3>TypeScript</h3>
+            <img class="cert" src="./imgs/typescript.jpeg" alt="TypeScript">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container hidden">
+      <div class="port-container">
+        <div class="title-container">
+          <h2>Personal Projects</h2>
+        </div>
+        <div class="project">
+          <a href="https://raid-and-dmf-timers.web.app" target="_blank">
+            <img src="./imgs/ony.png" alt="" height="180" width="360">
+          </a>
+          <a href="https://raid-and-dmf-timers.web.app" target="_blank">
+            <p> - Onyxia and Darkmoon Faire Timers: This is a React web application, tracking the reset time of the Onyxia's Lair raid in Classic World of Warcraft and a timer showing if the Darkmoon Faire is currently available or on cooldown.</p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://react-app-2024-65cb6.web.app" target="_blank">
+            <img src="./imgs/blacklist.png" alt="" height="180" width="360">
+          </a>
+          <a href="https://react-app-2024-65cb6.web.app" target="_blank">
+            <p> - My Personal M+ Blacklist: This is a React web application, giving the user an ability to create an account, import their World of Warcraft retail character and keep a list of people they disliked during mythic+ gameplay. The app works with firebase as a backend. (If you don't have a character to import you can use mine - Fullepixx-Outland)</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div id="german-version" class="lang-hidden">
+    <div class="container visible">
+      <div class="personal">
+        <div class="picture">
+          <img src="./imgs/IMG_1431.jpg" alt="" width="400" height="520">
+          <div class="skills">
+            <img src="./imgs/react.png" alt="" width="30" height="30">
+            <img src="./imgs/js.webp" alt="" width="30" height="30">
+            <img src="./imgs/Typescript_logo_2020.svg.png" alt="" width="30" height="30">
+            <img src="./imgs/css3-logo-vector-download-11573943110ujyqmvcq4d.png" alt="" width="30" height="30">
+            <img src="./imgs/png-clipart-angularjs-single-page-application-web-application-angular-miscellaneous-angle-thumbnail.png" alt="" width="30" height="30" class="blinking-image">
+          </div>
+        </div>
+        <div class="info">
+          <h1>Allgemeine Informationen:</h1>
+          <h2>Adrian Kolarov</h2>
+          <p>Ich bin ein frisch zertifizierter React-Front-End-Entwickler mit einer Leidenschaft für benutzerfreundliche Anwendungen. Ich spezialisiere mich auf React, Vite, JavaScript und TypeScript und arbeite derzeit auch an einer Angular-Zertifizierung. Weiter unten können Sie meine Zertifikate und Projekte sehen, an denen ich gearbeitet habe.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container hidden">
+      <div class="cert-container">
+        <h2>Zertifikate</h2>
+        <div class="container1">
+          <div>
+            <h3>JS Advanced</h3>
+            <img class="cert" src="./imgs/js_advanced.jpeg" alt="Fortgeschrittenes JavaScript">
+          </div>
+          <div>
+            <h3>JS Applications</h3>
+            <img class="cert" src="./imgs/js_applicatoins.jpeg" alt="JavaScript-Anwendungen">
+          </div>
+          <div>
+            <h3>JS Backend</h3>
+            <img class="cert" src="./imgs/js_backend.jpeg" alt="JavaScript-Backend">
+          </div>
+          <div>
+            <h3>HTML & CSS</h3>
+            <img class="cert" src="./imgs/html+css.jpeg" alt="HTML + CSS">
+          </div>
+          <div>
+            <h3>ReactJS</h3>
+            <img class="cert" src="./imgs/reactjs.jpeg" alt="React JS">
+          </div>
+          <div>
+            <h3>TypeScript</h3>
+            <img class="cert" src="./imgs/typescript.jpeg" alt="TypeScript">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container hidden">
+      <div class="port-container">
+        <div class="title-container">
+          <h2>Persönliche Projekte</h2>
+        </div>
+        <div class="project">
+          <a href="https://raid-and-dmf-timers.web.app" target="_blank">
+            <img src="./imgs/ony.png" alt="" height="180" width="360">
+          </a>
+          <a href="https://raid-and-dmf-timers.web.app" target="_blank">
+            <p> - Onyxia and Darkmoon Faire Timer: Das ist eine React-Webanwendung, die die Reset-Zeit des Onyxia's Lair-Raids in Classic World of Warcraft verfolgt und einen Timer anzeigt, ob die Darkmoon-Faire derzeit verfügbar oder im Cooldown ist.</p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://react-app-2024-65cb6.web.app" target="_blank">
+            <img src="./imgs/blacklist.png" alt="" height="180" width="360">
+          </a>
+          <a href="https://react-app-2024-65cb6.web.app" target="_blank">
+            <p> - My Personal M+ Blacklist: Das ist eine React-Webanwendung, die dem Benutzer die Möglichkeit bietet, ein Konto zu erstellen, seinen World of Warcraft Retail-Charakter zu importieren und eine Liste von Personen zu führen, die er während des Mythic+ Gameplays nicht mochte. Die App arbeitet mit Firebase als Backend. (Falls Sie keinen Charakter zum Importieren haben, können Sie meinen verwenden - Fullepixx-Outland)</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal">
+    <button class="close" onclick="closeModal()">&times;</button>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <img class="modal-content" id="modalImage">
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+  
+  
+</body>
+</html>
