@@ -29,7 +29,7 @@ body {
     gap: 20px; 
   }
   .cert {
-    width: calc(20vw - 80px);
+    width: calc(15vw);
     height: auto;
     display: block;
     cursor: pointer;
