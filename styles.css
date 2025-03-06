@@ -108,6 +108,9 @@ a { text-decoration: none; }
 .picture img {
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  width: 100%; /* Ensure image is responsive */
+  max-width: 400px; /* Max width for larger screens */
+  height: auto;
 }
 h1 {
   font-size: 4rem;
@@ -206,7 +209,7 @@ p {
   width: 40px;
 }
 
-
+/* Mobile View */
 @media (max-width: 768px) {
 .container1 {
   flex-direction: column; 
@@ -224,7 +227,7 @@ p {
   margin: auto;
 }
 .cert {
-  width: 100%; 
+  width: 100%;
 }
 .container {
   display: flex;
@@ -233,12 +236,16 @@ p {
   flex-direction: column;
   margin-bottom: 20px;
   opacity: 1; 
-  transform: none; 
+  transform: none;
 }
 .personal {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+}
+.picture img {
+  max-width: 80%; 
+  height: auto; 
 }
 .port-container {
   margin-left: 0;
