@@ -206,7 +206,7 @@ p {
   width: 40px;
 }
 
-/* Mobile View */
+
 @media (max-width: 768px) {
 .container1 {
   flex-direction: column; 
@@ -241,8 +241,10 @@ p {
   gap: 2rem;
 }
 .picture img:first-of-type{
-  max-width: 80%; 
+  max-width: 100%; 
   height: auto; 
+  margin-top: 20px;
+  
 }
 .port-container {
   margin-left: 0;
