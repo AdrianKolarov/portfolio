@@ -240,7 +240,7 @@ p {
   align-items: center;
   gap: 2rem;
 }
-.picture img:first-of-type{
+.picture > img:first-of-type{
   max-width: 100%; 
   height: auto; 
   margin-top: 3.75rem;
