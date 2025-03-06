@@ -108,10 +108,7 @@ a { text-decoration: none; }
 .picture img {
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-  width: 100%; /* Ensure image is responsive */
-  max-width: 400px; /* Max width for larger screens */
-  height: auto;
-}
+ }
 h1 {
   font-size: 4rem;
   color: white;
@@ -243,7 +240,7 @@ p {
   align-items: center;
   gap: 2rem;
 }
-.picture img {
+.picture img:first-of-type{
   max-width: 80%; 
   height: auto; 
 }
